@@ -55,7 +55,7 @@ ex.
 
 CASSANDRA_HOME: `C:\Cassandra\apache-cassandra-3.0.27`
 
-PATH: `C:\Cassandra\apache-cassandra-3.0.27\bin` (Append)
+PATH: `C:\Cassandra\apache-cassandra-3.0.27\bin` and `C:\Cassandra\apache-cassandra-3.0.27\tools\bin` (Append)
 
 #### 3. Check installation
 
