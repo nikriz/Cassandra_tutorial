@@ -87,8 +87,6 @@ Download from https://www.anaconda.com/products/distribution
 
 ### Install Docker (for distributed environment, copied from Assignment 1)
 
-You need `docker-compose` to setup the machines. 
-
 For Windows/Mac
 
 * Docker-desktop: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/) 
@@ -97,4 +95,25 @@ For Ubuntu
 
 * Docker: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 * docker-compose: [https://docs.docker.com/compose/install/linux/](https://docs.docker.com/compose/install/linux/) 
+
+For cassandra setup commands, see the tutorial in the jupyter notebook. 
+
+
+### Q&As
+
+(Update 2022.10.11) 
+
+- Search for `8u251` at JAVA installation file download directory, install the one starting with `jdk` and that suits your OS
+
+- (MAC) JAVA Mac Default Installation Directory: `/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home`
+
+- (MAC) If docker commands in distributed setting get errors / or dockers are working but not connected each other when `nodetool status`
+  
+  change `$INSTANCE1=[~]` to `export INSTANCE1=[~]` due to shell command differences. 
+
+- If python cassandra driver doesn't work on jupyter notebook, but works in anaconda prompt, reinstall jupyter notebook in the environment with `conda install jupyter`
+
+- If shell commands doesn't work on jupyter notebook check the PATH with `!echo $PATH` or `sys.path` and manually update the missing directories with `!export PATH=$PATH:[~] or sys.path.append([~])`
+
+- For timestamp, insert with string format referring https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/timestamp_type_r.html 
 
