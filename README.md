@@ -1,4 +1,11 @@
 
+## Notice
+(Update 2022.10.21) 
+### :warning: Second query in assignment 2 is modified
+### :warning: Due for assignment 2 is delayed for 1 day
+
+---
+
 ### Q&As
 
 (Update 2022.10.15) 
@@ -17,6 +24,7 @@
 
 - For timestamp, insert with string format referring https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/timestamp_type_r.html 
 
+---
 
 # Installation Guide 
 
